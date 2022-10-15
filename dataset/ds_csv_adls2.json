@@ -1,0 +1,23 @@
+{
+	"name": "ds_csv_adls2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_csv_datalake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "muqtest.csv",
+				"folderPath": "input",
+				"fileSystem": "salesproject"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
